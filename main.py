@@ -10,9 +10,7 @@ load_dotenv()
 BIZINFO_API_KEY = os.getenv("BIZINFO_API_KEY")
 NOTION_TOKEN = os.getenv("NOTION_TOKEN")
 NOTION_DB_ID = os.getenv("NOTION_DB_ID")
-print(f"BIZINFO_API_KEY : {BIZINFO_API_KEY}")
-print(f"NOTION_TOKEN : {NOTION_TOKEN}")
-print(f"NOTION_DB_ID : {NOTION_DB_ID}")
+
 BASE_URL = "https://www.bizinfo.go.kr/uss/rss/bizinfoApi.do"
 
 notion = Client(auth=NOTION_TOKEN)
